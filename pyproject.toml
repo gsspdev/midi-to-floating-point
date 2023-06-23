@@ -1,25 +1,17 @@
 [tool.poetry]
 name = "midi-to-floating-point"
 version = "0.1.0"
-description = "Simple conversion of MIDI 0-127 values to 0-1 floating point"
+description = "Simple MIDI 0-127 to 0-1 float conversion"
 authors = ["gsspdev <108854023+gsspdev@users.noreply.github.com>"]
 license = "GPLv3"
 readme = "README.md"
 packages = [{include = "midi_to_floating_point"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-midiexplorer = "^0.0.1a2"
-libmidi = "^1.1.0"
-libmidi-io = "^1.0.1"
+python = "^3.11"
+python-rtmidi = "^1.5.2"
 py-midi = "^2.0.1"
 
-[tool.poetry.group.dev.dependencies]
-py-midi = "^2.0.1"
-libmidi = "libmidi"
-midiexplorer = "^0.0.1a2"
-libmidi-io = "^1.0.1"
-py-midi = "^2.0.1"
 
 [build-system]
 requires = ["poetry-core"]
