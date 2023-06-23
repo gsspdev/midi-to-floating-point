@@ -11,6 +11,7 @@ packages = [{include = "midi_to_floating_point"}]
 python = "^3.11"
 python-rtmidi = "^1.5.2"
 py-midi = "^2.0.1"
+pygame = "^2.4.0"
 
 
 [build-system]
